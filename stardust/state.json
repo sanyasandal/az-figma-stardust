@@ -1,0 +1,833 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-12T12:22:14Z",
+    "stardustVersion": "0.25.0"
+  },
+  "site": {
+    "originUrl": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+    "deployUrl": "https://main--az-figma-stardust--sanyasandal.aem.page/",
+    "extractedAt": "2026-10-12T12:22:14+00:00",
+    "pageCap": 25,
+    "totalDiscovered": 23,
+    "crawled": 23,
+    "source": "figma:excatfigma"
+  },
+  "direction": {
+    "resolvedAt": "2026-10-12T12:22:14+00:00",
+    "phrase": "migrate … to eds in auto mode",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "faithful"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-10-12T12:22:14+00:00",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "login",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Login",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "registration",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Registration",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "channel-consent",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Channel consent",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "email-verification",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Email verification",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "email-verified",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Email verified",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "profile-review",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Profile review",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "link-expired",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Link expired",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "resend-verification-email",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Resend verification email",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "forgot-password",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Forgot password",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "forgot-password-resend",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Forgot password resend",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "reset-password",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Reset password",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "reset-successful",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Reset successful",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "change-password",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Change password",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "password-successfully-changed",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Password successfully changed",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "login-without-password",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Login without password",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "reset-link-expired",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Reset link expired",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "reset-password-sent",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Reset password sent",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "waiting-confirmation",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Waiting confirmation",
+      "type": "status",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "account-inactive",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Account inactive",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "account-found",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Account found",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "account-not-found",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Account not found",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "pending-validation",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Pending validation",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "session-lost",
+      "url": "https://www.figma.com/design/rsZQmpVzuyn0KhCDA3WN60/One-AZ-v3.2?node-id=13496-19403",
+      "title": "Session lost",
+      "type": "auth-form",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-12T12:22:14+00:00"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-12T12:22:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-12T12:22:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-12T12:22:14Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/figma/states.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}

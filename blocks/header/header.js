@@ -109,17 +109,77 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (navBrand) {
+    const brandLink = navBrand.querySelector('.button');
+    if (brandLink) {
+      brandLink.className = '';
+      brandLink.closest('.button-wrapper')?.classList.remove('button-wrapper');
+    }
+    const picture = navBrand.querySelector('picture');
+    if (picture && !picture.closest('a')) {
+      const link = document.createElement('a');
+      link.href = '/';
+      const alt = picture.querySelector('img')?.alt;
+      link.setAttribute('aria-label', alt ? `${alt} home` : 'Home');
+      picture.replaceWith(link);
+      link.append(picture);
+    }
+  }
+
+  // flow pages (header-style: minimal) only show the logo
+  if (document.body.classList.contains('header-minimal')) {
+    nav.querySelectorAll('.nav-sections, .nav-tools').forEach((el) => el.remove());
+    nav.classList.add('nav-minimal');
+    block.textContent = '';
+    const minimalWrapper = document.createElement('div');
+    minimalWrapper.className = 'nav-wrapper';
+    minimalWrapper.append(nav);
+    block.append(minimalWrapper);
+    return;
+  }
+
+  // utility lists (contact, languages) in the tools section move to a top bar
+  const navTools = nav.querySelector('.nav-tools');
+  let utility = null;
+  if (navTools) {
+    const lists = navTools.querySelectorAll('ul');
+    if (lists.length) {
+      utility = document.createElement('div');
+      utility.className = 'nav-utility';
+      lists.forEach((ul, i) => {
+        if (i === lists.length - 1 && lists.length > 1) ul.classList.add('nav-languages');
+        ul.querySelectorAll('li').forEach((li) => {
+          const strong = li.querySelector('strong');
+          const link = li.querySelector('a');
+          if (strong && link) {
+            link.setAttribute('aria-current', 'true');
+            strong.replaceWith(...strong.childNodes);
+          }
+        });
+        utility.append(ul);
+      });
+    }
+    navTools.querySelectorAll('.icon').forEach((icon) => {
+      const link = icon.closest('a');
+      const name = [...icon.classList].find((c) => c.startsWith('icon-'))?.substring(5);
+      if (link && !link.textContent.trim() && name) {
+        link.setAttribute('aria-label', name.charAt(0).toUpperCase() + name.slice(1));
+      }
+    });
   }
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
       const subList = navSection.querySelector(':scope > ul');
-      if (!subList) return;
+      if (!subList) {
+        // authoring tools wrap plain links in a paragraph
+        const para = navSection.querySelector(':scope > p');
+        if (para && para.children.length === 1 && para.firstElementChild.tagName === 'A') {
+          para.replaceWith(para.firstElementChild);
+        }
+        return;
+      }
       navSection.classList.add('nav-drop');
       // wrap the dropdown label in a button so it is announced as expandable
       const button = document.createElement('button');
@@ -155,6 +215,7 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
+  if (utility) nav.append(utility);
   navWrapper.append(nav);
   block.append(navWrapper);
 }

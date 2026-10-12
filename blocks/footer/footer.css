@@ -1,20 +1,114 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  line-height: 24px;
 }
 
 footer .footer > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: var(--container-width);
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
+footer .footer a:any-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer .footer a:hover {
+  color: var(--interaction-color);
+  text-decoration: underline;
+}
+
+footer .footer-brand .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+footer .footer-brand img {
+  width: auto;
+  height: 30px;
+}
+
+footer .footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer .footer-links + .footer-links {
+  margin-top: -16px;
+}
+
+footer .footer-bottom .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+footer .footer-bottom p:first-child {
+  display: flex;
+  gap: 16px;
+}
+
+footer .footer-bottom .footer-social-link {
+  display: inline-flex;
+}
+
+footer .footer-bottom .icon {
+  width: 24px;
+  height: 24px;
+}
+
+footer .footer-bottom p:last-child {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (width >= 768px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    grid-template-columns: minmax(0, 1.47fr) minmax(0, 1.47fr) minmax(0, 1fr);
+    gap: 48px 40px;
+    padding: 40px;
+    text-align: start;
+  }
+
+  footer .footer-brand .default-content-wrapper {
+    align-items: flex-start;
+  }
+
+  footer .footer-brand p:last-child {
+    max-width: 310px;
+  }
+
+  footer .footer .footer-links + .footer-links {
+    margin-top: 0;
+  }
+
+  footer .footer-bottom {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (width >= 1260px) {
+  footer .footer > div {
+    padding-inline: 0;
   }
 }

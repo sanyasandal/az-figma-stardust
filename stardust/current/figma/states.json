@@ -1,0 +1,809 @@
+[
+  {
+    "nodeId": "13530:12110",
+    "name": "Forgot Password",
+    "slug": "forgot-password",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "field",
+        "label": "Your email address",
+        "required": true,
+        "inputType": "email",
+        "placeholder": "e.g. example@email.com",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Create new password",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. No body text; title followed directly by the email field. Label/placeholder read from screenshot (flattened to image)."
+  },
+  {
+    "nodeId": "13530:16259",
+    "name": "Waiting Confirmation",
+    "slug": "waiting-confirmation",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "loader",
+        "dots": 2,
+        "color": "#d0006f",
+        "sizePx": 12
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Design context lists a body .Text node under the title, but it is not visible in the screenshot (blank gap) – treated as hidden/empty. Two 12px #d0006f dots centered with 12px gap, 40px vertical padding (loading/waiting indicator), then two identical body paragraphs in separate Block Content sections. No buttons."
+  },
+  {
+    "nodeId": "13530:14671",
+    "name": "Login without pass",
+    "slug": "login-without-password",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1048,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "field",
+        "label": "Your email address",
+        "required": true,
+        "inputType": "email",
+        "placeholder": "e.g. example@email.com",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Send me the link",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Magic-link login. Button section is fixed 420px tall (whitespace below)."
+  },
+  {
+    "nodeId": "13530:14956",
+    "name": "Reset link expired",
+    "slug": "reset-link-expired",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "field",
+        "label": "Your email address",
+        "required": true,
+        "inputType": "email",
+        "placeholder": "e.g. example@email.com",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Send me the link",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Single primary button only. Button section fixed 420px tall."
+  },
+  {
+    "nodeId": "13530:15983",
+    "name": "Reset pass sent",
+    "slug": "reset-password-sent",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back to login",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state; single primary button."
+  },
+  {
+    "nodeId": "13530:16803",
+    "name": "Account Inactive",
+    "slug": "account-inactive",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Reset password",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state."
+  },
+  {
+    "nodeId": "15011:9054",
+    "name": "Account Found",
+    "slug": "account-found",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Resend the link",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state."
+  },
+  {
+    "nodeId": "13530:16998",
+    "name": "Account Not Found",
+    "slug": "account-not-found",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Register now",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state."
+  },
+  {
+    "nodeId": "13530:17193",
+    "name": "Pending Validation",
+    "slug": "pending-validation",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back to home",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state; single primary button."
+  },
+  {
+    "nodeId": "13530:17388",
+    "name": "Session Lost",
+    "slug": "session-lost",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back to home",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state; identical layout to Pending Validation."
+  },
+  {
+    "nodeId": "13530:12695",
+    "name": "Reset Password",
+    "slug": "reset-password",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "field",
+        "label": "Password",
+        "required": true,
+        "inputType": "password",
+        "placeholder": "*************",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "field",
+        "label": "Confirm password",
+        "required": true,
+        "inputType": "password",
+        "placeholder": "*************",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Save password",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. No body text. Fields stacked with 40px gap. Placeholder is a row of grey asterisks (masked). Design context shows a right-side 'Text + Icon' slot in inputs but screenshot shows no visible eye icon."
+  },
+  {
+    "nodeId": "13530:14008",
+    "name": "Change Password",
+    "slug": "change-password",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "field",
+        "label": "Current password",
+        "required": true,
+        "inputType": "password",
+        "placeholder": "*************",
+        "rightLink": {
+          "text": "Forgot your password?"
+        },
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "field",
+        "label": "New password",
+        "required": true,
+        "inputType": "password",
+        "placeholder": "*************",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "field",
+        "label": "Confirm new password",
+        "required": true,
+        "inputType": "password",
+        "placeholder": "*************",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Save password",
+            "style": "primary"
+          },
+          {
+            "text": "Back to Account Details",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. 'Forgot your password?' is an underlined Inter 16/24 #d0006f link right-aligned on the label row of the first field. Fields stacked with 40px gap."
+  },
+  {
+    "nodeId": "13530:12392",
+    "name": "Forgot Password Resend",
+    "slug": "forgot-password-resend",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Resend the email",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Message-only state; single primary button."
+  },
+  {
+    "nodeId": "13530:13822",
+    "name": "Reset Succesful",
+    "slug": "reset-successful",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back to login",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Success message state; no success icon present."
+  },
+  {
+    "nodeId": "13530:14485",
+    "name": "Pass Successfully Changed",
+    "slug": "password-successfully-changed",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back to Account Details",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. Success message state; no success icon present."
+  },
+  {
+    "nodeId": "13496:17255",
+    "name": "Registration",
+    "slug": "registration",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1708,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "text",
+        "text": "One of the biggest challenges with DCM is that it’s highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause."
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "First name",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. John",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "First name",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. Dowry",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "Title",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. Doctor",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "HCP type",
+            "required": true,
+            "inputType": "select",
+            "placeholder": "Select an option",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "Hospital/Practice name",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. St Thomas’ Hospital",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "Speciality",
+            "required": true,
+            "inputType": "select",
+            "placeholder": "Select an option",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "EFN (Uniform Training Number)",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. 123456789",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "Telephone number",
+            "required": false,
+            "inputType": "tel",
+            "placeholder": "e.g. +44 7700 900123",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "Email",
+            "required": true,
+            "inputType": "email",
+            "placeholder": "e.g. john.dowry@example.com",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "House number and street",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. Oxford Street, 45",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "Additional address field",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. Avenue/Road/Lane",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "Zip code",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. PO16 7",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "City",
+            "required": true,
+            "inputType": "text",
+            "placeholder": "e.g. London",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "fieldRow",
+        "fields": [
+          {
+            "type": "field",
+            "label": "Password",
+            "required": true,
+            "inputType": "password",
+            "placeholder": "*************",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          },
+          {
+            "type": "field",
+            "label": "Confirm Password",
+            "required": true,
+            "inputType": "password",
+            "placeholder": "*************",
+            "rightLink": null,
+            "helper": null,
+            "widthPx": 570
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "label": "Terms & Condition",
+        "required": false,
+        "labelIsLink": true
+      },
+      {
+        "type": "checkbox",
+        "label": "Privacy Policy",
+        "required": false,
+        "labelIsLink": true
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Back",
+            "style": "secondary"
+          },
+          {
+            "text": "Register",
+            "style": "primary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. SCREENSHOT-ONLY merge (fields read from image). Two-column grid of 570px fields, 40px column gap. Second field label in Figma reads 'First name' (likely meant Last name) – kept verbatim. Select fields show chevron-down icon on right; password fields show eye (show/hide) icon on right. Checkbox labels are underlined #d0006f links. Button order: Back (secondary) then Register (primary)."
+  },
+  {
+    "nodeId": "13527:9738",
+    "name": "Resend Verification Email",
+    "slug": "resend-verification-email",
+    "template": "flow",
+    "header": "logo-only",
+    "frameHeight": 1024,
+    "blocks": [
+      {
+        "type": "title",
+        "text": "The most inspiring heading"
+      },
+      {
+        "type": "field",
+        "label": "Your email adress",
+        "required": true,
+        "inputType": "email",
+        "placeholder": "e.g. example@email.com",
+        "rightLink": null,
+        "helper": null,
+        "widthPx": 570
+      },
+      {
+        "type": "buttons",
+        "align": "center",
+        "items": [
+          {
+            "text": "Resend the email",
+            "style": "primary"
+          },
+          {
+            "text": "Back to login",
+            "style": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": "Template B flow: logo-only 60px header, white Block Content sections at 1180px, title Lexia 46/50 #830051, body Inter 16/24 #3c4242; form fields 570px wide centered; centered button row; site footer. SCREENSHOT-ONLY merge. Label typo 'adress' is verbatim from Figma. No body text."
+  }
+]
