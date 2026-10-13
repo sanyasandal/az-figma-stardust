@@ -27,3 +27,11 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 
 **Open questions:**
 - Real link targets, select options, and the auth backend integration.
+
+## Deploy (stardust deploy, hands-off)
+
+- Gates on all 24 pages: exactly one h1, 0 about:error, Title + Description. Added Description metadata to resend-verification-email, forgot-password, reset-password.
+- Code: PR #1 merged to main (835bdb5).
+- Content: nav, footer, index + 23 state pages previewed and published via da-live-admin MCP (no DA_TOKEN, so deploy-batch.mjs not used).
+- Verified live: https://main--az-figma-stardust--sanyasandal.aem.live/login and the other 23 pages pass the gates; auth-form loads.
+- Not created: DA /library block library (no stardust skill does this).
