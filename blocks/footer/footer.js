@@ -16,5 +16,23 @@ export default async function decorate(block) {
   const footer = document.createElement('div');
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
+  // first section = brand, last section = social + legal code, the rest are link columns
+  const sections = [...footer.children];
+  sections.forEach((section, i) => {
+    if (i === 0) section.classList.add('footer-brand');
+    else if (i === sections.length - 1 && sections.length > 2) section.classList.add('footer-bottom');
+    else section.classList.add('footer-links');
+  });
+
+  footer.querySelectorAll('a').forEach((link) => {
+    const icon = link.querySelector('.icon');
+    if (!icon || link.textContent.trim()) return;
+    const name = [...icon.classList].find((c) => c.startsWith('icon-'))?.substring(5) || '';
+    const label = { x: 'X', youtube: 'YouTube', linkedin: 'LinkedIn' }[name]
+      || name.charAt(0).toUpperCase() + name.slice(1);
+    link.setAttribute('aria-label', label);
+    link.classList.add('footer-social-link');
+  });
+
   block.append(footer);
 }

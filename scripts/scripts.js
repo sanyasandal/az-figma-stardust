@@ -10,6 +10,8 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
+  toClassName,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -143,6 +145,40 @@ function decorateButtons(main) {
 }
 
 /**
+ * Groups consecutive button paragraphs so they lay out as one row.
+ * @param {HTMLElement} main The main container element
+ */
+function groupButtons(main) {
+  main.querySelectorAll('.default-content-wrapper > p.button-wrapper').forEach((p) => {
+    if (p.parentElement.classList.contains('button-group')) return;
+    const group = document.createElement('div');
+    group.className = 'button-group';
+    p.before(group);
+    let next = p;
+    while (next && next.matches('p.button-wrapper')) {
+      const following = next.nextElementSibling;
+      group.append(next);
+      next = following;
+    }
+  });
+}
+
+/**
+ * Applies the Section Metadata background (delivered by the backend as data-background).
+ * @param {Element} main The container element
+ */
+function decorateSectionBackgrounds(main) {
+  main.querySelectorAll(':scope > div[data-background]').forEach((section) => {
+    const url = new URL(section.dataset.background, window.location.href);
+    url.searchParams.set('width', '2000');
+    url.searchParams.set('format', 'webply');
+    url.searchParams.set('optimize', 'medium');
+    section.style.setProperty('--section-background', `url("${url.href}")`);
+    section.classList.add('has-background');
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -150,9 +186,11 @@ function decorateButtons(main) {
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
+  decorateSectionBackgrounds(main);
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  groupButtons(main);
 }
 
 /**
@@ -162,6 +200,8 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  const headerStyle = toClassName(getMetadata('header-style'));
+  if (headerStyle) document.body.classList.add(`header-${headerStyle}`);
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

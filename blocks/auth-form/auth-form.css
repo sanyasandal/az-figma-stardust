@@ -1,0 +1,303 @@
+.auth-form {
+  max-width: 570px;
+  margin: 40px auto 0;
+}
+
+.auth-form form {
+  margin: 0;
+}
+
+.auth-form .auth-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* fields */
+.auth-form .auth-form-field-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-bottom: 8px;
+}
+
+.auth-form .auth-form-label {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.auth-form .auth-form-required {
+  color: var(--interaction-color);
+}
+
+.auth-form .auth-form-helper-link {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.auth-form .auth-form-control-wrap {
+  position: relative;
+}
+
+.auth-form .auth-form-control {
+  box-sizing: border-box;
+  width: 100%;
+  height: 54px;
+  margin: 0;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  padding: 0 16px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.auth-form .auth-form-control::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1;
+}
+
+.auth-form .auth-form-control:hover {
+  border-color: var(--placeholder-color);
+}
+
+.auth-form .auth-form-control:focus-visible {
+  border-color: var(--interaction-color);
+  outline: 1px solid var(--interaction-color);
+  outline-offset: 0;
+}
+
+.auth-form .auth-form-control:user-invalid {
+  border-color: #c2001b;
+}
+
+.auth-form .auth-form-field-password .auth-form-control {
+  padding-right: 52px;
+}
+
+.auth-form select.auth-form-control {
+  appearance: none;
+  padding-right: 48px;
+  background-image: url('../../icons/chevron-down.svg');
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+}
+
+.auth-form select.auth-form-control:has(option[value='']:checked) {
+  color: var(--placeholder-color);
+}
+
+.auth-form .auth-form-reveal {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 4px;
+  padding: 0;
+  background: url('../../icons/eye-off.svg') center / 24px no-repeat;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.auth-form .auth-form-reveal[aria-pressed='true'] {
+  background-image: url('../../icons/eye.svg');
+}
+
+/* checkboxes and toggles */
+.auth-form .auth-form-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.auth-form .auth-form-choice label {
+  cursor: pointer;
+}
+
+.auth-form .auth-form-text p,
+.auth-form .auth-form-note p,
+.auth-form .auth-form-choice label p {
+  margin: 0;
+}
+
+.auth-form .auth-form-checkbox input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  accent-color: var(--interaction-color);
+  cursor: pointer;
+}
+
+.auth-form .auth-form-toggle {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.auth-form .auth-form-toggle input {
+  flex: none;
+  position: relative;
+  width: 36px;
+  height: 20px;
+  margin: 2px 0 0;
+  border-radius: 10px;
+  background-color: var(--input-border-color);
+  appearance: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-form .auth-form-toggle input::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  transition: transform 0.2s;
+}
+
+.auth-form .auth-form-toggle input:checked {
+  background-color: var(--interaction-color);
+}
+
+.auth-form .auth-form-toggle input:checked::after {
+  transform: translateX(16px);
+}
+
+/* group label (e.g. "Channel consent requirements *") */
+.auth-form .auth-form-group-label {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* divider, text, actions */
+.auth-form .auth-form-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.auth-form .auth-form-divider::before,
+.auth-form .auth-form-divider::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--input-border-color);
+}
+
+.auth-form .auth-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.auth-form .auth-form-status {
+  margin: 24px 0 0;
+  border-left: 4px solid var(--interaction-color);
+  padding: 12px 16px;
+  background-color: var(--surface-muted-color);
+  font-size: 14px;
+}
+
+.auth-form .auth-form-status[hidden] {
+  display: none;
+}
+
+.auth-form .auth-form-note {
+  margin-top: 40px;
+  padding: 24px 20px;
+  background-color: var(--surface-muted-color);
+  text-align: center;
+}
+
+/* wide and two-column variants use the full content width */
+.auth-form.wide,
+.auth-form.two-column {
+  max-width: none;
+}
+
+@media (width < 768px) {
+  .auth-form .auth-form-spacer {
+    display: none;
+  }
+}
+
+@media (width >= 768px) {
+  .auth-form.two-column .auth-form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 40px;
+  }
+
+  .auth-form.two-column .auth-form-fields > :not(.auth-form-field, .auth-form-spacer) {
+    grid-column: 1 / -1;
+  }
+
+  .auth-form.two-column .auth-form-choice {
+    margin-top: 0;
+  }
+}
+
+/* inside a login card the form fills the card and actions stack */
+.section.login-card .auth-form {
+  max-width: none;
+  margin: 0;
+  padding-top: 32px;
+}
+
+.section.login-card .auth-form .auth-form-actions {
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.section.login-card .auth-form .auth-form-checkbox {
+  justify-content: flex-start;
+}
+
+.section.login-card .auth-form .auth-form-note {
+  margin: 40px -20px 0;
+}
+
+@media (width >= 768px) {
+  .section.login-card .auth-form .auth-form-checkbox {
+    justify-content: center;
+  }
+
+  .section.login-card .auth-form .auth-form-note {
+    margin-inline: -40px;
+  }
+
+  .section.login-card .auth-form .auth-form-note p {
+    display: inline;
+  }
+
+  .section.login-card .auth-form .auth-form-note p + p {
+    margin-left: 24px;
+  }
+}
+
+@media (width < 768px) {
+  .section.login-card .auth-form .auth-form-note p + p {
+    margin-top: 16px;
+  }
+}
